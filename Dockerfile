@@ -29,7 +29,7 @@ RUN wget http://nodejs.org/dist/v$NODE/node-v$NODE.tar.gz &&\
     tar -zxf node-v$NODE.tar.gz &&\
     cd node-v$NODE &&\
     ./configure &&\
-    make make -jX &&\
+    make &&\
     make install &&\
     cd /tmp/docker/build/moloch/viewer &&\
     npm update
