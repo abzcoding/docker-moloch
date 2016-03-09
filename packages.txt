@@ -1,0 +1,9 @@
+bison
+curl
+flex
+gettext
+libjson-perl
+libwww-perl
+pkg-config
+python
+wget

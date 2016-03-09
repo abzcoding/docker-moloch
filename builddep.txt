@@ -1,0 +1,13 @@
+git-core
+g++
+libbz2-dev
+libffi-dev
+libffi-dev
+libgeoip-dev
+libmagic-dev
+libpcre3-dev
+libpng-dev
+libtoolize
+make
+uuid-dev
+zlib1g-dev
