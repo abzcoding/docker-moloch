@@ -1,3 +1,0 @@
-bison
-pkg-config
-python
