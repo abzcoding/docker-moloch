@@ -33,4 +33,7 @@ RUN wget http://nodejs.org/dist/v$NODE/node-v$NODE.tar.gz &&\
     make install &&\
     cd /tmp/docker/build/moloch/viewer &&\
     npm update
-
+# Clean up unnecessary files
+RUN xargs apt-get purge -y --auto-remove < /tmp/builddep.txt &&\
+    apt-get clean &&\
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
