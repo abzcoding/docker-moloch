@@ -30,8 +30,8 @@ RUN buildDeps='curl \
   && echo "Disable Swap in linux kernel" \
   && swapoff -a \
   && echo "Build Moloch [CAPTURE]" \
-  && git clone https://github.com/aol/moloch.git /moloch \
-  && cd /moloch \
+  && git clone https://github.com/aol/moloch.git \
+  && cd moloch \
   && ./easybutton-build.sh \
   && cd \
   && echo "Build Moloch [VIEWER]" \
@@ -41,7 +41,7 @@ RUN buildDeps='curl \
   && ./configure \
   && make \
   && make install \
-  && cd /moloch/viewer \
+  && cd /tmp/docker/build/moloch/viewer \
   && npm update \
   && cd /moloch \
   && mkdir -p files \
@@ -56,6 +56,7 @@ RUN buildDeps='curl \
   && sed -i -e 's/GeoIP\.dat/files\/GeoIP\.dat/g' /moloch/config.ini \
   && sed -i -e 's/GeoIPASNum\.dat/files\/GeoIPASNum\.dat/g' /moloch/config.ini \
   && sed -i -e 's/ipv4-address-space\.cvs/files\/ipv4-address-space\.csv/g' /moloch/config.ini \
+  && git clone https://github.com/aol/moloch.git /moloch \
   && echo "Clean up unnecessary files" \
   && apt-get purge -y --auto-remove $buildDeps \
   && apt-get clean \
