@@ -47,7 +47,7 @@ RUN buildDeps='curl \
   && mkdir -p files \
   && cd files \
   && wget https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.csv \
-  && wget http://www.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz &&\
+  && wget http://www.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz \
   && gunzip GeoIPASNum.dat.gz \
   && wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz \
   && gunzip GeoIP.dat.gz \
