@@ -10,6 +10,7 @@ RUN buildDeps='curl \
                g++ \
                libffi-dev \
                libuuid \
+               util-linux-dev \
                flex-dev \
                pcre-dev \
                gettext-dev \
