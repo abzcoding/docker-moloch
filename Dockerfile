@@ -12,6 +12,9 @@ RUN buildDeps='curl \
                libuuid \
                util-linux-dev \
                file-dev \
+               libssl1.0 \
+               libcrypto1.0 \
+               openssl-dev \
                flex-dev \
                pcre-dev \
                gettext-dev \
