@@ -11,7 +11,7 @@ RUN buildDeps='curl \
                libffi-dev \
                libuuid \
                util-linux-dev \
-               libmagic \
+               file \
                flex-dev \
                pcre-dev \
                gettext-dev \
@@ -19,9 +19,8 @@ RUN buildDeps='curl \
                zlib-dev \
                make' \
   && set -x \
-  && apk update && apk upgrade \
-  && apk-install $buildDeps \
-                 python \
+  && apk add --update $buildDeps \
+                      python \
   && echo "Build Moloch [CAPTURE]" \
   && git clone https://github.com/aol/moloch.git \
   && cd moloch \
