@@ -8,6 +8,7 @@ RUN buildDeps='curl \
                git \
                g++ \
                libffi-dev \
+               gettext-dev \
                zlib-dev \
                make' \
   && set -x \
