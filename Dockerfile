@@ -4,7 +4,7 @@ MAINTAINER Abouzar Parvan <abzcoding@gmail.com>
 
 WORKDIR /tmp/docker/build
 
-RUN buildDeps='curl'
+RUN buildDeps='curl' \
   && set -x \
   && apk add --update $buildDeps \
                       python \
