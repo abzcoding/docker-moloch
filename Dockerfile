@@ -7,6 +7,7 @@ WORKDIR /tmp/docker/build
 RUN buildDeps='curl \
                git \
                g++ \
+               libffi-dev \
                zlib-dev \
                make' \
   && set -x \
