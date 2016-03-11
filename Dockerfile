@@ -1,4 +1,4 @@
-FROM busybox:latest
+FROM alpine:latest
 
 MAINTAINER Abouzar Parvan <abzcoding@gmail.com>
 
@@ -23,11 +23,10 @@ RUN buildDeps='curl \
                wget \
                zlib1g-dev' \
   && set -x \
-  && apt-get update -qq \
-  && apt-get install -yq $buildDeps \
-                          python \
-                          bison \
-                          pkg-config --no-install-recommends \
+  && apk add --update $buildDeps \
+                      python \
+                      bison \
+                      pkg-config --no-install-recommends \
   && echo "Disable Swap in linux kernel" \
   && swapoff -a \
   && echo "Build Moloch [CAPTURE]" \
