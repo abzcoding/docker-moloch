@@ -7,6 +7,7 @@ WORKDIR /tmp/docker/build
 RUN buildDeps='curl \
                git \
                g++ \
+               zlib \
                make' \
   && set -x \
   && apk add --update $buildDeps \
