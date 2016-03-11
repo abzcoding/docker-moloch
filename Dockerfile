@@ -6,7 +6,8 @@ WORKDIR /tmp/docker/build
 
 RUN buildDeps='curl \
                git \
-               gcc' \
+               gcc \
+               make' \
   && set -x \
   && apk add --update $buildDeps \
                       python \
