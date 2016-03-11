@@ -24,7 +24,7 @@ RUN buildDeps='curl \
                busybox \
                glib-dev \
                glib \
-               libnids-dev \
+               libnids \
                libintl \
                gettext \
                linux-headers \
