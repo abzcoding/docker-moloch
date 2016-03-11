@@ -25,6 +25,7 @@ RUN buildDeps='curl \
                glib-dev \
                glib \
                libintl \
+               autoconf \
                gettext \
                linux-headers \
                zlib-dev \
