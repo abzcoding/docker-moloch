@@ -11,7 +11,7 @@ RUN buildDeps='curl \
                libffi-dev \
                libuuid \
                util-linux-dev \
-               file \
+               lua5.2-file-magic \
                flex-dev \
                pcre-dev \
                gettext-dev \
