@@ -9,6 +9,11 @@ RUN buildDeps='curl \
                git \
                g++ \
                libffi-dev \
+               geoip-dev \
+               libpcre32 \
+               libpng-dev \
+               perl-libwww \
+               gettext-dev \
                libuuid \
                util-linux-dev \
                file-dev \
@@ -25,6 +30,7 @@ RUN buildDeps='curl \
   && set -x \
   && apk add --update $buildDeps \
                       python \
+                      bison \
   && echo "Build Moloch [CAPTURE]" \
   && git clone https://github.com/aol/moloch.git \
   && cd moloch \
