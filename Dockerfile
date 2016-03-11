@@ -11,6 +11,7 @@ RUN buildDeps='curl \
                flex-dev \
                pcre-dev \
                gettext-dev \
+               linux-headers \
                zlib-dev \
                make' \
   && set -x \
