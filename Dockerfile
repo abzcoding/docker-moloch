@@ -8,6 +8,7 @@ RUN buildDeps='curl \
                git \
                g++ \
                libffi-dev \
+               flex-dev \
                pcre-dev \
                gettext-dev \
                zlib-dev \
@@ -44,6 +45,5 @@ RUN buildDeps='curl \
   && sed -i -e 's/GeoIPASNum\.dat/files\/GeoIPASNum\.dat/g' /moloch/config.ini \
   && sed -i -e 's/ipv4-address-space\.cvs/files\/ipv4-address-space\.csv/g' /moloch/config.ini \
   && echo "Clean up unnecessary files" \
-  && apt-get purge -y --auto-remove $buildDeps \
-  && apt-get clean \
-  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+  && apk del $buildDeps \
+  && rm -rf /var/cache/apk/* /tmp/* /var/tmp/*
