@@ -19,10 +19,11 @@ RUN buildDeps='curl \
                libssl1.0 \
                libcrypto1.0 \
                openssl-dev \
-               libintl \
                flex-dev \
                pcre-dev \
-               gettext-dev \
+               busybox \
+               glib-dev \
+               libintl \
                linux-headers \
                zlib-dev \
                make' \
