@@ -24,6 +24,8 @@ RUN buildDeps='curl \
                busybox \
                glib-dev \
                libintl \
+               gettext \
+               gettext-libs \
                linux-headers \
                zlib-dev \
                make' \
