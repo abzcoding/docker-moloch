@@ -23,6 +23,7 @@ RUN buildDeps='curl \
                pcre-dev \
                busybox \
                glib-dev \
+               glib \
                libintl \
                gettext \
                linux-headers \
