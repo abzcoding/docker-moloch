@@ -19,8 +19,9 @@ RUN buildDeps='curl \
                zlib-dev \
                make' \
   && set -x \
-  && apk add --update $buildDeps \
-                      python \
+  && apk update && apk upgrade && \
+  && apk-install $buildDeps \
+                 python \
   && echo "Build Moloch [CAPTURE]" \
   && git clone https://github.com/aol/moloch.git \
   && cd moloch \
