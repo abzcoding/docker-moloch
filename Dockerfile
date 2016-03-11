@@ -5,7 +5,6 @@ MAINTAINER Abouzar Parvan <abzcoding@gmail.com>
 WORKDIR /tmp/docker/build
 
 RUN buildDeps='curl \
-               byacc \
                git \
                g++ \
                libffi-dev \
