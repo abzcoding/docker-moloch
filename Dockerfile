@@ -4,32 +4,10 @@ MAINTAINER Abouzar Parvan <abzcoding@gmail.com>
 
 WORKDIR /tmp/docker/build
 
-RUN buildDeps='curl \
-               git-core \
-               flex \
-               g++ \
-               gettext \
-               git-core \
-               libbz2-dev \
-               libffi-dev \
-               libffi-dev \
-               libgeoip-dev \
-               libjson-perl \
-               libmagic-dev \
-               libpcre3-dev \
-               libpng-dev \
-               libwww-perl \
-               make \
-               uuid-dev \
-               wget \
-               zlib1g-dev' \
+RUN buildDeps='curl'
   && set -x \
   && apk add --update $buildDeps \
                       python \
-                      bison \
-                      pkg-config --no-install-recommends \
-  && echo "Disable Swap in linux kernel" \
-  && swapoff -a \
   && echo "Build Moloch [CAPTURE]" \
   && git clone https://github.com/aol/moloch.git \
   && cd moloch \
