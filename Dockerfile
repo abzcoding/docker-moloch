@@ -1,4 +1,5 @@
-FROM debian:latest
+FROM busybox:latest
+
 MAINTAINER Abouzar Parvan <abzcoding@gmail.com>
 
 WORKDIR /tmp/docker/build
