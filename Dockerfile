@@ -24,10 +24,10 @@ RUN buildDeps='curl \
                busybox \
                glib-dev \
                glib \
-               libintl \
                autoconf \
                automake \
                linux-headers \
+               perl \
                zlib-dev \
                make' \
   && set -x \
