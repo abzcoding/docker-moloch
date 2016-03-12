@@ -27,7 +27,6 @@ RUN buildDeps='curl \
                libintl \
                autoconf \
                automake \
-               gettext \
                linux-headers \
                zlib-dev \
                make' \
