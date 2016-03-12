@@ -12,7 +12,7 @@ RUN buildDeps='curl \
                libpcre32 \
                libpng-dev \
                perl-libwww \
-               gettext-dev \
+               libintl \
                libuuid \
                util-linux-dev \
                file-dev \
