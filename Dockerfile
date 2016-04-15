@@ -1,5 +1,5 @@
 FROM alpine:latest
-RUN apk add --update wget curl openjdk8 python git && \
+RUN apk add --update wget curl openjdk8 python git build-base && \
     mkdir -p /data/git &&\
     echo "git clone" &&\
     git clone https://github.com/aol/moloch.git /data/git &&\
