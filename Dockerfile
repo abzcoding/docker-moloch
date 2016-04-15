@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:edge
 RUN apk add --update wget curl openjdk8 python git build-base flex bison libpcrecpp libuuid libmagic libffi-dev zlib-dev gettext json-glib-dev geoip-dev && \
     mkdir -p /data/git &&\
     echo "git clone" &&\
